@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Counter from './counter';
-import { faRecycle } from "@fortawesome/free-solid-svg-icons";
+import { faSyncAlt} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Style from '../style/style.css'
@@ -13,7 +13,7 @@ class Counters extends Component {
         return (
             <div>
                 <button onClick={onReset} className="btn-reset">
-                    <FontAwesomeIcon icon={faRecycle} />
+                    <FontAwesomeIcon icon={faSyncAlt} />
                 </button>
                 {counters.map(counter =>
                     <Counter
