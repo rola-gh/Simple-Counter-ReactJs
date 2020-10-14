@@ -1,0 +1,51 @@
+/*NAV BAR*/
+.navbar{
+    background-color: rgba(119, 136, 153, 0.05);
+    padding: 10px;
+
+}
+nav a {
+    display: inline-block;
+    padding: 5px;
+}
+.totalCounters {
+     background-color: #46a3fb;
+     color: white;
+     padding: 2px 15px;
+     border-radius: 15px;
+     border: 0;
+     outline: none;
+}
+ /*reset*/
+.btn-reset{
+    background-color: #1faf2a;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin-left: 20%;
+    margin-top: 0.5%;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/*Counter*/
+.row{
+    /*background-color: #61dafb;*/
+    /*width: 50%;*/
+    margin-left: 20%;
+    margin-top: 5px;
+    padding: 5px;
+}
+.row button{
+    display: inline-block;
+    margin-left: 5px;
+}
+.btn-zero{
+    background-color: rgba(245, 204, 67, 0.97);
+    border: none;
+    width: 50px;
+    font-weight: 600;
+    padding: 5px;
+
+}
