@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { faPlusCircle , faMinusCircle} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// eslint-disable-next-line no-unused-vars
 import Style from '../style/style.css'
 
 class Counter extends Component {
@@ -13,13 +14,13 @@ class Counter extends Component {
         return (
             <div className="row">
                 <button className="btn-zero">
-                    <span >{this.formatCount()}</span>
+                    <span>{this.formatCount()}</span>
                 </button>
 
-                <button onClick={() => this.props.onIncrement(this.props.counter)}>
-                        <FontAwesomeIcon icon={faPlusCircle} />
+                <button onClick={() => this.props.onIncrement(this.props.counter)} className={'plus'}>
+                    <FontAwesomeIcon icon={faPlusCircle} />
                 </button>
-                <button onClick={() => this.props.onDecrement(this.props.counter)} disabled={this.props.counter.value===0?"Disables":""}>
+                <button className='minus' onClick={() => this.props.onDecrement(this.props.counter)} disabled={this.props.counter.value===0?"Disables":""}>
                     <FontAwesomeIcon icon={faMinusCircle} />
                 </button>
 
