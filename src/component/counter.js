@@ -10,6 +10,15 @@ class Counter extends Component {
         const { value } = this.props.counter;
         return value === 0 ? "Zero" : value;
     }
+    // formatCount() {
+    //     const { value } = this.props.counter;
+    //     if(value === 0){
+    //         this.setState({activeClass:'test1'})
+    //             return "Zero"
+    //         }else{
+    //             this.setState({activeClass:'test2'})
+    //                 return value
+    //         }}
     render() {
         return (
             <div className="row">
