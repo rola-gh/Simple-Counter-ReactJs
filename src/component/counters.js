@@ -3,6 +3,7 @@ import Counter from './counter';
 import { faSyncAlt} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// eslint-disable-next-line no-unused-vars
 import Style from '../style/style.css'
 
 class Counters extends Component {
