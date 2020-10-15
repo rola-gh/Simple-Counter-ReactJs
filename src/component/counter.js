@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { faPlusCircle , faMinusCircle} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-// eslint-disable-next-line no-unused-vars
-import Style from '../style/style.css'
+import '../style/style.css'
 
 class Counter extends Component {
     formatCount() {
@@ -19,10 +18,12 @@ class Counter extends Component {
     //             this.setState({activeClass:'test2'})
     //                 return value
     //         }}
+
+
     render() {
         return (
             <div className="row">
-                <button className="btn-zero">
+                <button className={this.props.counter.value === 0 ? "btn-zero" : "value"}>
                     <span>{this.formatCount()}</span>
                 </button>
 
